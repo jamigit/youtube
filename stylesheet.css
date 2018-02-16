@@ -1,11 +1,27 @@
+
+/**----------------------- HEADER ---------------------------**/
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+html,p,h1,h2,h3,h4,h5,h6{
+
+font-family: Roboto, sans-serif;
+font-weight: normal;
+}
+
+
+
 /**----------------------- HEADER ---------------------------**/
 
 .top-header{
   width: auto;
-  background-color: lightgreen;
   margin:0 20px 10px 20px;
   padding:5px;
   height:50px;
+  border-bottom: 2px solid rgba(160, 160, 160, 0.1);
 }
 
 
@@ -36,8 +52,13 @@ display: inline-block;
   float:right;
 }
 
-#up-next-top{
 
+.side-nav{
+  width: 30%;
+  height: 600px;
+  background-color: lightgrey;
+  float:right;
+    margin: 0 10px;
 }
 
 /**----------------------- Body ---------------------------**/
@@ -55,14 +76,6 @@ display: inline-block;
   float:left;
   margin: 0 10px;
 
-}
-
-.side-nav{
-  width: 30%;
-  height: 600px;
-  background-color: lightgrey;
-  float:right;
-    margin: 0 10px;
 }
 
 
@@ -87,18 +100,68 @@ display: inline-block;
 }
 
 
+.content{
+  margin: 30px 0 30px 0;
+  display: block;
+  overflow: hidden;
+    border-bottom: 2px solid rgba(160, 160, 160, 0.1);
+}
+
+.content-text{
+  display: block;
+}
+
 .inline{
 display: inline-block;
+}
 
+.inline-left{
+  float: left;
+}
+
+.inline-right{
+  float: right;
+}
+.inline-right p{
+  display:inline;
+}
+
+/**----------------------- Body ---------------------------**/
+
+
+.overflow{
+  overflow: hidden;
 }
 .comments{
-  background-color: lightgrey;
+  background-color: #ggg;
   margin: 20px 0;
+  padding: 5px;
+}
+
+
+
+.total-comments{
+  margin: 20px 0 30px; 0;
+  display: block;
+  overflow: hidden;
+
 }
 
 .sort-comments > *{
   display: inline;
 
+}
+
+.user{
+  margin: -20px 0 0 30px;
+  display: inline-block;
+}
+.user h5{
+  margin: 20px 0 0 0 ;
+}
+
+.user h5 span{
+  font-color: lightgrey;
 }
 
 .user-img{
@@ -113,8 +176,26 @@ display: inline-block;
 .comment-reply > p
 {
   display: inline;
+  margin-right: 15px;
 }
 
+.comment-reply svg
+{
+  display: inline;
+  margin: 0 7px;
+
+}
+
+.video-title{
+  border-bottom: 1px solid rgba(160, 160, 160, 0.1);
+}
+
+.video-social-bar {
+  display: inline-block;;
+}
 .video-social-bar > *{
   display: inline;
+}
+#video-social-bar-right{
+  float:right;
 }
