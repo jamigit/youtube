@@ -18,47 +18,135 @@ font-weight: normal;
 
 .top-header{
   width: auto;
-  margin:0 20px 10px 20px;
+  margin:10px 20px 10px 20px;
   padding:5px;
   height:50px;
   border-bottom: 2px solid rgba(160, 160, 160, 0.1);
 }
 
+.top-header *{
+  height: 40px;
+  overflow: hidden;
+  padding: 0px;
+  margin:0px;
+}
 
 
 .header-left{
   float:left;
   display:inline-block;
 }
+.header-left *{
+  margin: 0 10px;
+}
+.header-left form{
+  border-radius: 0px;
+  border: 0.5px solid rgb(160,160,160);
+}
+
+.header-left input{
+  margin: 0 0 0 50px;
+  width: 400px;
+}
+.header-left button{
+  margin:0 0 0 -8px;
+}
+
 
 .header-right{
 float: right;
 display: inline-block;
 }
+.header-right *{
+  margin: 0 10px;
+}
+
+#user-img-small{
+
+    background-color: orange;
+    border-radius:50%;
+    height:40px;
+    width:40px;
+    display:inline-block;
+  }
 
 /**----------------------- SIDE BAR ---------------------------**/
 
+.aside-header{
+  overflow:hidden;
+  margin:5px 0 10px 0;
+  padding: 0;
+}
+
+
+.aside-header p {
+  margin: 0;
+  padding: 0;
+}
+
+.aside-header>*{
+  display: inline;
+
+}
+
+.left{
+  float: left;
+
+}
+.right{
+  float: right;
+
+}
+
+
+
+
+.up-next-top{
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(160,160,160,0.15);
+}
+
+.up-next-top2{
+    margin: 15px 0 10px 0;
+    width: 100%
+}
+
 .up-next{
-    margin: 5px 0 5px 0;
+    margin: 10px 0 5px 0;
+    width: 100%
+}
+
+.up-next-left{
+  float:left;
 }
 
 .up-next-img{
   height:100px;
-  float:left;
 }
 
 .up-next-text{
+  margin-left: 10px;
   height:100px;
-  float:right;
+  display: inline-block;
+
+}
+
+.up-next-text *{
+  margin: 0;
+  padding: 0;
 }
 
 
 .side-nav{
   width: 30%;
   height: 600px;
-  background-color: lightgrey;
+  background-color: #ggg;
   float:right;
     margin: 0 10px;
+}
+
+.side-nav>*{
+  width: 350px;
 }
 
 /**----------------------- Body ---------------------------**/
@@ -67,6 +155,7 @@ display: inline-block;
   width: 70%;
   margin: 20px auto;
   padding: 0;
+
 }
 
 .main-body{
@@ -104,6 +193,9 @@ display: inline-block;
   margin: 30px 0 30px 0;
   display: block;
   overflow: hidden;
+}
+
+.description{
     border-bottom: 2px solid rgba(160, 160, 160, 0.1);
 }
 
@@ -140,16 +232,25 @@ display: inline-block;
 
 
 
-.total-comments{
-  margin: 20px 0 30px; 0;
-  display: block;
-  overflow: hidden;
+.total-commments{
+  margin: 20px 0 30px 0;
 
+  display: block;
 }
+
+.sort-comments{
+  margin: 0 0 20px 0;
+  }
+
 
 .sort-comments > *{
   display: inline;
+  margin-right: 20px;
+}
 
+.overflow input{
+  margin-left: 20px;
+  border: 0px;
 }
 
 .user{

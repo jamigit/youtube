@@ -10,18 +10,24 @@
   </head>
 
   <body>
-    <header class="top-header bottom-border">
-      <div="header-left">
+    <header class="top-header overflow">
+      <div class="header-left">
         <i class="fas fa-align-justify"></i>
         <a href="#"><img id="youtube-logo" src="assets/youtube-logo.png"></a>
+
+      <div>
         <input type="text" placeholder="Search"></input>
+      </div>
+        <button type="submit"><i class="fa fa-search"></i></button>
+
+
       </div>
 
         <div class="header-right">
           <i class="fas fa-upload"></i>
           <i class="fas fa-th"></i>
           <i class="fas fa-bell"></i>
-          <div class="user-img"></div>
+          <div id="user-img-small"></div>
         </div>
 
     </header>
@@ -29,7 +35,7 @@
 
 
 
-<div class="wrap">
+<div class="wrap ">
     <!--      +++++++++++++++++++    Main video content -->
     <div class="main-body">
       <iframe
@@ -65,20 +71,25 @@
          <div class="inline">
            <h4> Sony Pictures Entertainment</h4>
            <p>Published on Feb 8, 2018</p>
+
          </div>
          </div>
 
          <div class="inline inline-right" >
           <p> Subscribed 3.8m</p>
               <i class="fas fa-bell"></i>
-             </div>
+         </div>
+
+      </div>
+      <div class="description">
+          <p> shdfkjsdfjksdkfjksdjfk sjkdf lks djf sdjf slf</p>
       </div>
 
 
 
 
 
-  <!--     Add  Comment      -->        -
+  <!--     Add  Comment      -->
      <div class="total-commments">
         <div class="sort-comments">
           <p>31,174 Comments</p>
@@ -96,20 +107,19 @@
   <!--      Comment      -->
      <div class="comments">
          <a href="#">
-         <div class="user-img">
-         </div>
-         <div class="user">
-              <h5>Johny Noone <span>2 days ago</span> </h5>
-          </a>
+           <div class="user-img"></div>
+           <div class="user">
+                <h5>Johny Noone <span>2 days ago</span> </h5>
+        </a>
 
-        <p>This is going to be great </p>
-        <div class="comment-reply">
-          <p>Reply</p>
-          <p>116</p>
-          <i class="fas fa-thumbs-up"></i>
-          <i class="fas fa-thumbs-down"></i>
-        </div>
-        <p> View Reply</p>
+          <p>This is going to be great </p>
+          <div class="comment-reply">
+            <p>Reply</p>
+            <p>116</p>
+            <i class="fas fa-thumbs-up"></i>
+            <i class="fas fa-thumbs-down"></i>
+          </div>
+          <p> View Reply</p>
         </div>
    </div>
 
@@ -129,10 +139,34 @@
     <aside class="side-nav">
 
 
-      <section class="up-next" id="up-next-top">
-        <a href="#">
-          <img class="up-next-img" src="assets/deadpool.jpg">
-        </a>
+      <header class="aside-header">
+        <div class="left">
+        <p> Up next</p>
+      </div>
+        <div class="right">
+        <p> Autoplay</p>
+      </div>
+      </header>
+
+      <section class="up-next-top">
+        <div class="up-next-left">
+            <a href="#">
+              <img class="up-next-img" src="assets/deadpool.jpg">
+            </a>
+        </div>
+        <div class="up-next-text">
+          <h4>Video number one</h4>
+          <p>TedX Talks</p>
+          <p>10M views</p>
+        </div>
+      </section>
+
+      <section class="up-next-top2">
+        <div class="up-next-left">
+            <a href="#">
+              <img class="up-next-img" src="assets/deadpool.jpg">
+            </a>
+        </div>
         <div class="up-next-text">
           <h4>Video number one</h4>
           <p>TedX Talks</p>
@@ -141,15 +175,19 @@
       </section>
 
       <section class="up-next">
-        <a href="#">
-          <img class="up-next-img" src="assets/deadpool.jpg">
-        </a>
+        <div class="up-next-left">
+            <a href="#">
+              <img class="up-next-img" src="assets/deadpool.jpg">
+            </a>
+        </div>
         <div class="up-next-text">
           <h4>Video number one</h4>
           <p>TedX Talks</p>
           <p>10M views</p>
         </div>
       </section>
+
+
 
     </aside>
       </div>
